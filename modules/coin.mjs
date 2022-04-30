@@ -82,7 +82,6 @@ export function countFlips(array) {
     }
   var result = "{heads: " + heads + ", tails: " + tails + "}";
   return result;
-  }
 }
 
 /** Flip a coin!
@@ -110,7 +109,7 @@ export function flipACoin(call) {
     statement.result = "lose";
   } 
   return statement;
-  }
+  
 }
 
 
