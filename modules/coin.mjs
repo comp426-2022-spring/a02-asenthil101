@@ -43,18 +43,15 @@ export function coinFlip() {
     ]
  */
 
-export function coinFlips(flips) {
-  var arr = new Array()
+export function coinFlips(flips) { 
+  let flipList = []; 
+  let i = 0; 
   for (let i=0; i < flips; i++) {
-    let randomNum = Math.random()
-    if (randomNum > 0.5) {
-      arr[i] = "heads"
-    }
-    else {
-      arr[i] = "tails"
-    }
+    flipList.push(coinFlip());
   }
+  return flipList;
 }
+
 
 /** Count multiple flips
  * 
